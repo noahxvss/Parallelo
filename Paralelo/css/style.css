@@ -1,0 +1,105 @@
+/* Define estilos gerais para o corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão ao redor do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão ao redor do corpo da página */
+    width: 100%; /* Define a largura do corpo para 100% da largura da viewport */
+    height: 600px; /* Define a altura do corpo da página */
+}
+
+/* Estilos para o elemento de navegação (nav) */
+nav {
+    margin: 0 auto; /* Centraliza o menu horizontalmente */
+    position: absolute; /* Posiciona o menu de forma absoluta em relação ao pai mais próximo */
+    top: 15px; /* Define a distância do topo da página para o menu */
+    width: 100%; /* Define a largura do menu para 100% da largura da viewport */
+    min-width: 1080px; /* Define a largura mínima do menu */
+}
+
+/* Estilos para o contêiner geral do menu de navegação */
+nav #mainMenu-geral {
+    max-width: 1480px; /* Define a largura máxima do contêiner do menu */
+    height: 125px; /* Define a altura da barra de navegação */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    background-color: black; /* Define a cor de fundo do menu como preto */
+}
+
+/* Estilos para a lista de itens dentro do menu de navegação */
+nav ul {
+    display: flex; /* Alinha os itens da lista em uma linha horizontal */
+    flex-direction: row; /* Define a direção dos itens na linha */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o preenchimento padrão do navegador */
+}
+
+/* Estilos para cada item da lista no menu de navegação */
+nav ul li {
+    list-style: none; /* Remove a marcação padrão da lista (bolinhas) */
+    height: 125px; /* Define a altura dos itens para se alinhar com a altura da barra de navegação */
+    transition: all 1s; /* Define uma transição suave de 1 segundo para todas as propriedades */
+}
+
+/* Estilos para o estado de hover dos itens da lista */
+nav ul li:hover {
+    background-color: #444444; /* Muda a cor de fundo para cinza escuro quando o item é sobreposto */
+    transition: all 1s; /* Define uma transição suave de 1 segundo para todas as propriedades */
+}
+
+/* Estilos para o número (span) dentro dos itens da lista */
+nav ul li span {
+    float: left; /* Alinha o número à esquerda do item da lista */
+    color: #868686; /* Define a cor do número como cinza */
+    font-size: 11px; /* Define o tamanho da fonte para o número */
+    margin: 58px 3px 53px 15px; /* Define a margem ao redor do número */
+}
+
+/* Estilos para os links dentro dos itens da lista */
+nav ul li a {
+    color: white; /* Define a cor do texto como branco */
+    font-size: 16px; /* Define o tamanho da fonte para o texto do link */
+    text-transform: uppercase; /* Converte o texto do link para maiúsculas */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    padding: 53px 15px 53px 0; /* Define o preenchimento ao redor do texto do link */
+    float: left; /* Alinha o link à esquerda do item da lista */
+    transition: all 1s; /* Define uma transição suave de 1 segundo para todas as propriedades */
+}
+
+/* Estilos para o estado de hover dos links dentro dos itens da lista */
+nav ul li a:hover {
+    text-decoration: line-through; /* Adiciona uma linha através do texto quando o link é sobreposto */
+    color: yellow; /* Muda a cor do texto para amarelo quando o link é sobreposto */
+    transition: all 1s; /* Define uma transição suave de 1 segundo para todas as propriedades */
+}
+
+/* Estilos para o span dentro dos links na lista */
+nav ul li a span {
+    font-size: 11px; /* Define o tamanho da fonte para o span */
+    color: #868686; /* Define a cor do texto do span como cinza */
+    margin: 5px 3px 0 0; /* Define a margem ao redor do span */
+}
+
+/* Estilos para a imagem do logotipo dentro do menu de navegação */
+nav #logo img {
+    height: 75px; /* Define a altura da imagem do logotipo */
+    margin: 25px; /* Adiciona margem ao redor da imagem do logotipo */
+    float: left; /* Alinha a imagem do logotipo à esquerda do menu */
+}
+
+/* Estilos para o menu principal dentro do menu de navegação */
+nav #mainMenu {
+    float: right; /* Alinha o menu principal à direita da barra de navegação */
+}
+
+/* Estilos aplicados aos elementos com a classe 'montserrat' e aos links dentro do menu de navegação */
+.montserrat, nav ul li a {
+    font-family: "Montserrat", sans-serif; /* Define a fonte como Montserrat com uma fonte sans-serif como fallback */
+    font-optical-sizing: auto; /* Ajusta automaticamente o tamanho da fonte com base no tamanho do texto */
+    font-weight: 400; /* Define o peso da fonte como normal */
+    font-style: normal; /* Define o estilo da fonte como normal (não itálico) */
+}
+
+/* Estilos para a imagem de fundo no cabeçalho */
+header img {
+    width: 100%; /* Define a largura da imagem para 100% da largura da viewport */
+    height: 600px; /* Define a altura da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área de visualização, preservando a proporção */
+}
