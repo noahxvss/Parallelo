@@ -1,105 +1,167 @@
-/* Define estilos gerais para o corpo da página */
 body {
     margin: 0; /* Remove a margem padrão ao redor do corpo da página */
     padding: 0; /* Remove o preenchimento padrão ao redor do corpo da página */
-    width: 100%; /* Define a largura do corpo para 100% da largura da viewport */
-    height: 600px; /* Define a altura do corpo da página */
+    width: 100%; /* Define a largura do corpo para 100% da largura da tela */
+    height: 600px; /* Define a altura do corpo para 600 pixels */
 }
 
-/* Estilos para o elemento de navegação (nav) */
 nav {
-    margin: 0 auto; /* Centraliza o menu horizontalmente */
-    position: absolute; /* Posiciona o menu de forma absoluta em relação ao pai mais próximo */
-    top: 15px; /* Define a distância do topo da página para o menu */
-    width: 100%; /* Define a largura do menu para 100% da largura da viewport */
-    min-width: 1080px; /* Define a largura mínima do menu */
+    margin: 0 auto; /* Centraliza horizontalmente o menu de navegação */
+    position: absolute; /* Posiciona o menu de navegação de forma absoluta em relação ao contêiner pai */
+    top: 15px; /* Define a distância do topo da página */
+    width: 100%; /* Define a largura do menu de navegação para 100% da tela */
+    min-width: 1080px; /* Define a largura mínima do menu de navegação */
 }
 
-/* Estilos para o contêiner geral do menu de navegação */
 nav #mainMenu-geral {
-    max-width: 1480px; /* Define a largura máxima do contêiner do menu */
-    height: 125px; /* Define a altura da barra de navegação */
-    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-    background-color: black; /* Define a cor de fundo do menu como preto */
+    max-width: 1480px; /* Define a largura máxima do contêiner do menu de navegação */
+    height: 125px; /* Define a altura do contêiner do menu de navegação */
+    margin: 0 auto; /* Centraliza horizontalmente o contêiner do menu de navegação */
+    background-color: black; /* Define a cor de fundo do menu de navegação como preto */
 }
 
-/* Estilos para a lista de itens dentro do menu de navegação */
 nav ul {
     display: flex; /* Alinha os itens da lista em uma linha horizontal */
-    flex-direction: row; /* Define a direção dos itens na linha */
-    margin: 0; /* Remove a margem padrão do navegador */
-    padding: 0; /* Remove o preenchimento padrão do navegador */
+    flex-direction: row; /* Define a direção dos itens como linha (horizontal) */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
 }
 
-/* Estilos para cada item da lista no menu de navegação */
 nav ul li {
-    list-style: none; /* Remove a marcação padrão da lista (bolinhas) */
-    height: 125px; /* Define a altura dos itens para se alinhar com a altura da barra de navegação */
-    transition: all 1s; /* Define uma transição suave de 1 segundo para todas as propriedades */
+    list-style: none; /* Remove a marcação padrão dos itens da lista */
+    height: 125px; /* Define a altura dos itens da lista para coincidir com a altura do menu */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
 }
 
-/* Estilos para o estado de hover dos itens da lista */
 nav ul li:hover {
-    background-color: #444444; /* Muda a cor de fundo para cinza escuro quando o item é sobreposto */
-    transition: all 1s; /* Define uma transição suave de 1 segundo para todas as propriedades */
+    background-color: #444444; /* Muda a cor de fundo dos itens da lista ao passar o mouse */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
 }
 
-/* Estilos para o número (span) dentro dos itens da lista */
 nav ul li span {
-    float: left; /* Alinha o número à esquerda do item da lista */
-    color: #868686; /* Define a cor do número como cinza */
-    font-size: 11px; /* Define o tamanho da fonte para o número */
-    margin: 58px 3px 53px 15px; /* Define a margem ao redor do número */
+    float: left; /* Alinha o texto do número do item à esquerda */
+    color: #868686; /* Define a cor do texto como cinza claro */
+    font-size: 11px; /* Define o tamanho da fonte do texto */
+    margin: 58px 3px 53px 15px; /* Define a margem ao redor do texto */
 }
 
-/* Estilos para os links dentro dos itens da lista */
 nav ul li a {
-    color: white; /* Define a cor do texto como branco */
-    font-size: 16px; /* Define o tamanho da fonte para o texto do link */
-    text-transform: uppercase; /* Converte o texto do link para maiúsculas */
+    color: white; /* Define a cor do texto dos links como branco */
+    font-size: 16px; /* Define o tamanho da fonte dos links */
+    text-transform: uppercase; /* Transforma o texto dos links em maiúsculas */
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    padding: 53px 15px 53px 0; /* Define o preenchimento ao redor do texto do link */
-    float: left; /* Alinha o link à esquerda do item da lista */
-    transition: all 1s; /* Define uma transição suave de 1 segundo para todas as propriedades */
+    padding: 53px 15px 53px 0; /* Define o preenchimento interno dos links */
+    float: left; /* Alinha os links à esquerda dos itens da lista */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
 }
 
-/* Estilos para o estado de hover dos links dentro dos itens da lista */
 nav ul li a:hover {
-    text-decoration: line-through; /* Adiciona uma linha através do texto quando o link é sobreposto */
-    color: yellow; /* Muda a cor do texto para amarelo quando o link é sobreposto */
-    transition: all 1s; /* Define uma transição suave de 1 segundo para todas as propriedades */
+    text-decoration: line-through; /* Adiciona uma linha através do texto dos links ao passar o mouse */
+    color: yellow; /* Muda a cor do texto dos links para amarelo ao passar o mouse */
+    transition: all 1s; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
 }
 
-/* Estilos para o span dentro dos links na lista */
 nav ul li a span {
-    font-size: 11px; /* Define o tamanho da fonte para o span */
-    color: #868686; /* Define a cor do texto do span como cinza */
-    margin: 5px 3px 0 0; /* Define a margem ao redor do span */
+    font-size: 11px; /* Define o tamanho da fonte do texto dentro do link */
+    color: #868686; /* Define a cor do texto como cinza claro */
+    margin: 5px 3px 0 0; /* Define a margem ao redor do texto */
 }
 
-/* Estilos para a imagem do logotipo dentro do menu de navegação */
 nav #logo img {
-    height: 75px; /* Define a altura da imagem do logotipo */
-    margin: 25px; /* Adiciona margem ao redor da imagem do logotipo */
-    float: left; /* Alinha a imagem do logotipo à esquerda do menu */
+    height: 75px; /* Define a altura da imagem do logo */
+    margin: 25px; /* Adiciona margem ao redor da imagem do logo */
+    float: left; /* Alinha a imagem do logo à esquerda do contêiner do menu */
 }
 
-/* Estilos para o menu principal dentro do menu de navegação */
 nav #mainMenu {
-    float: right; /* Alinha o menu principal à direita da barra de navegação */
+    float: right; /* Alinha o menu principal à direita do contêiner de navegação */
 }
 
-/* Estilos aplicados aos elementos com a classe 'montserrat' e aos links dentro do menu de navegação */
 .montserrat, nav ul li a {
-    font-family: "Montserrat", sans-serif; /* Define a fonte como Montserrat com uma fonte sans-serif como fallback */
-    font-optical-sizing: auto; /* Ajusta automaticamente o tamanho da fonte com base no tamanho do texto */
+    font-family: "Montserrat", sans-serif; /* Define a fonte dos textos como Montserrat */
+    font-optical-sizing: auto; /* Ajusta o tamanho da fonte para melhorar a legibilidade */
     font-weight: 400; /* Define o peso da fonte como normal */
-    font-style: normal; /* Define o estilo da fonte como normal (não itálico) */
+    font-style: normal; /* Define o estilo da fonte como normal */
 }
 
-/* Estilos para a imagem de fundo no cabeçalho */
-header img {
-    width: 100%; /* Define a largura da imagem para 100% da largura da viewport */
-    height: 600px; /* Define a altura da imagem */
-    object-fit: cover; /* Ajusta a imagem para cobrir a área de visualização, preservando a proporção */
+header {
+    width: 100%; /* Define a largura do cabeçalho para 100% da tela */
+    height: 600px; /* Define a altura do cabeçalho */
+}
+
+header .slide {
+    width: 100%; /* Define a largura da imagem para 100% da largura do contêiner */
+    height: 600px; /* Define a altura da imagem para 600 pixels */
+    object-fit: cover; /* Faz com que a imagem cubra a área do contêiner sem distorcer */
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    z-index: -1; /* Coloca a imagem atrás de outros elementos */
+}
+
+header #slide-bar {
+    margin-top: 320px; /* Define a margem superior para o contêiner de texto */
+    min-height: 280px; /* Define a altura mínima do contêiner de texto */
+    float: left; /* Alinha o contêiner à esquerda */
+    background-image: url(../img/slides/yellow-bg.png); /* Define a imagem de fundo */
+    width: 625px; /* Define a largura do contêiner de texto */
+    padding: 0 0 0 60px; /* Define o preenchimento à esquerda do contêiner de texto */
+}
+
+header #txt_slide {
+    font-family: "Montserrat", sans-serif; /* Define a fonte do texto */
+    font-size: 14px; /* Define o tamanho da fonte */
+    margin-top: 50px; /* Define a margem superior */
+    color: white; /* Define a cor do texto como branco */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+header #titulo_slide {
+    font-size: 50px; /* Define o tamanho da fonte do título */
+    color: white; /* Define a cor do texto como branco */
+    font-family: "Montserrat", sans-serif; /* Define a fonte do título */
+}
+
+header #titulo_slide h4 {
+    margin: 30px 0; /* Define a margem acima e abaixo do subtítulo */
+}
+
+header .seta {
+    float: left; /* Alinha a seta à esquerda */
+}
+
+header .direita {
+    margin-left: 20px; /* Adiciona uma margem à esquerda da seta direita */
+}
+
+.separador {
+    width: 100%; /* Define a largura do separador para 100% da tela */
+    height: 300px; /* Define a altura do separador */
+    background-image: url(../img/divider-dark.png); /* Define a imagem de fundo do separador */
+    background-repeat: repeat-x; /* Repete a imagem horizontalmente */
+}
+
+#frase {
+    display: flex; /* Define um layout flexível */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 300px; /* Define a altura do contêiner */
+}
+
+#frase .icons {
+    display: flex; /* Organiza os ícones em linha horizontal */
+    margin-bottom: 10px; /* Adiciona espaço entre os ícones e o texto */
+}
+
+#frase .icons span {
+    font-size: 120px; /* Aumenta o tamanho dos ícones */
+    color: #e7a920; /* Muda a cor dos ícones para amarelo */
+    margin: 0 10px; /* Adiciona espaço entre os ícones */
+}
+
+#frase p {
+    font-size: 28px; /* Define o tamanho da fonte do parágrafo */
+    font-weight: 300; /* Define o peso da fonte */
+    color: black; /* Muda a cor do texto para preto */
+    text-align: center; /* Centraliza o texto */
+    font-family: "Montserrat", sans-serif; /* Define a fonte do texto */
 }
